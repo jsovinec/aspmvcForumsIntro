@@ -42,7 +42,7 @@
 
             <div class="form-group">
                 <label for="Notes" class="control-label">Notes</label>
-                <textarea id="Notes" name="Notes" class="form-control" rows="14" cols="20">@ViewBag.Notes</textarea>
+                <textarea id="Notes" name="Notes" class="form-control" rows="14" cols="20">@(ViewBag.Notes != null ? ViewBag.Exclude.ToString() : " ")</textarea>
             </div>
 
         </div>
